@@ -28,4 +28,6 @@ assert "@resurrect-dir '/root/.tmux/resurrect'" in tmux
 assert "/workspace/.tmux" not in tmux
 assert "pipeline.git.tag matches /^v[1-9][0-9]*$/" in circleci
 assert "--platform linux/amd64" in circleci
+assert 'IMAGE_TAG="cu128-${CIRCLE_TAG}"' in circleci
+assert 'ROLLING_TAG="cu128-latest"' in circleci
 print("validation passed")
