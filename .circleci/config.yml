@@ -27,7 +27,7 @@ jobs:
           name: Validate release configuration
           command: |
             [[ "${CIRCLE_TAG:-}" =~ ^v[1-9][0-9]*$ ]] || { echo 'Release tag must be vN, for example v1'; exit 2; }
-            export DOCKER_IMAGE="${DOCKER_IMAGE:-coohh88/runpod-comfyui-128}"
+            export DOCKER_IMAGE="${DOCKER_IMAGE:-coohh88/runpod-comfyui-cu128}"
             export TEMPLATE_REPOSITORY_URL="${TEMPLATE_REPOSITORY_URL:-https://github.com/ilklatte/comfyui-cu128.git}"
             for name in DOCKER_IMAGE TEMPLATE_REPOSITORY_URL DOCKERHUB_USERNAME DOCKERHUB_TOKEN; do
               test -n "${!name:-}" || { echo "$name is required"; exit 2; }

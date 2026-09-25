@@ -2,7 +2,7 @@
 
 Custom RunPod image based on
 `runpod/comfyui:1.3.2-comfyuiv0.30.0-cuda12.8`. The published repository is
-`coohh88/runpod-comfyui-128`.
+`coohh88/runpod-comfyui-cu128`.
 
 ## Included environment
 
@@ -22,7 +22,7 @@ variables:
 
 | Variable | Value |
 | --- | --- |
-| `DOCKER_IMAGE` | `coohh88/runpod-comfyui-128` |
+| `DOCKER_IMAGE` | `coohh88/runpod-comfyui-cu128` |
 | `TEMPLATE_REPOSITORY_URL` | `https://github.com/ilklatte/comfyui-cu128.git` |
 | `DOCKERHUB_USERNAME` | Docker Hub account name |
 | `DOCKERHUB_TOKEN` | Docker Hub token with Read & Write permission |
